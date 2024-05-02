@@ -1,0 +1,102 @@
+header {
+    background-color: #3868D6;
+    padding: 1rem 0;
+}
+
+.content-flex {
+    display: flex;
+}
+header .container {
+    align-items: center;
+    justify-content: space-between;
+}
+header .container h1 { 
+    color: var(--font-color-default);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 80%;
+}
+
+.container nav ul {
+    list-style: none;
+    gap: 1rem;
+}
+
+.container nav ul li a { 
+    color: var(--font-color-default);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+#btn-mobile {
+    display: none;
+}
+
+main .container {
+    padding: 2rem 0;
+}
+
+main .container .about-store {
+    gap: var(--gap-display-default);
+    align-items: flex-start;
+}
+
+main .container .about-store .about-description h2,
+section .container-produts h2{ 
+    color: var( --color-default);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--color-default);
+}
+main .container .about-store .about-description p { 
+    margin-top: var(--margin-display-default);
+    font-size: var(--font-size-paragraph);
+}
+main .container .about-store img {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+section .container-produts h2{
+    margin-bottom: var(--margin-display-default);
+}
+
+section .container-produts img {
+    width: 100%;
+}
+section .container-produts .produts { 
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: var(--gap-display-default);
+}
+section .container-produts .descrition-produts h3 { 
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+section .container-produts .descrition-produts p {
+    margin-bottom: 1rem;
+}
+section .container-produts .descrition-produts button { 
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var( --color-default);
+    font-size: var(--font-size-paragraph);
+    font-weight: bolder;
+    color: var(--font-color-default);;
+}
+
+
+
+
+

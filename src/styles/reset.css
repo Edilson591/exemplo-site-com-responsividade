@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+:root {
+    --color-default: #3868D6;
+    --font-color-default:#EAF9F5;
+    --font-color-media:#3b4240;
+    --gap-display-default: 2rem;
+    --margin-display-default: 2rem;
+    --font-size-paragraph:1rem
+}

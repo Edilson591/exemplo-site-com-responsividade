@@ -1,0 +1,112 @@
+@media screen and (max-width: 640px){
+
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        right: -70vw;
+        width: 50%;
+        height: 100vh;
+        top: 70px;
+        z-index: 100;
+        visibility: visible;
+        overflow-y: auto;
+        backdrop-filter: blur(2px);
+        transition: right .5s ease;
+    }
+
+    #nav.active #menu {
+        right: 0;
+    }
+    #btn-mobile {
+        display: flex;
+        gap: .5rem;
+        border: none;
+        font-size: var(--font-size-paragraph);
+        transform: scale(1.2);
+        padding: 6px;
+        border-radius: 20%;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    #hamburguer {
+        width: 20px;
+        border-top: 3px solid;
+        color: #ffffff;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: "";
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 3px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: all .5s ease-in-out;
+    } 
+
+    #nav.active #hamburguer {
+        border-top: none;
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -8px;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .container nav ul li { 
+        padding: 1rem;
+    }
+    .container nav ul li a { 
+        position: relative;
+        color: var(--font-color-media);
+    }
+    .container nav ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 0;
+        bottom: -3px;
+        background-color: var(--color-default);
+    } 
+    .container nav ul li a:hover::after { 
+        width: 100%;
+        transition: width .5s ease-in-out ;
+    } 
+    
+    main .container .about-store {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .about-store picture img{ 
+        width: 100%;
+    }
+    section .container-produts .produts {
+        flex-direction: column;
+        gap: var(--gap-display-default);
+    }
+    
+  
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    main .container .about-store {
+        flex-direction: column;
+    }
+    section .container-produts .produts{
+        flex-wrap: wrap;
+
+    }
+}
